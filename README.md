@@ -16,6 +16,37 @@ The service accepts text input, returns a sentiment prediction (positive/negativ
 
 ---
 
+## 📂Project Structure
+
+```bash
+│   Dockerfile
+│   poetry.lock
+│   pyproject.toml
+│   README.md
+│
+├───data
+│       dataset.csv
+│
+├───models
+│       sentiment_pipeline.joblib
+│
+├───scripts
+│       train.py
+│
+├───src
+│   └───sentiment_service
+│       │   app.py
+│       │   __init__.py
+│       │
+│       ├───routers
+│       │   └─── predict.py
+│       │
+│       ├───schemas
+│       │   └─── input.py
+│
+└───tests
+```
+
 ## ⚙️ Installation
 
 ### 1. Clone the repository
@@ -31,3 +62,4 @@ cd sentiment-service-prod
 docker build -t sentiment-service .
 docker build -t sentiment-service .
 ```
+
