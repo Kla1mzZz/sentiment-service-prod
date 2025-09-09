@@ -11,8 +11,6 @@ The service accepts text input, returns a sentiment prediction (positive/negativ
 - **FastAPI** — building REST API.  
 - **scikit-learn** — machine learning model for sentiment analysis.  
 - **Docker** — containerization for easy deployment.  
-- **MLflow** (optional) — tracking predictions and model versions.  
-- **JWT** — authentication for secure API access.  
 
 ---
 
@@ -62,4 +60,5 @@ cd sentiment-service-prod
 docker build -t sentiment-service .
 docker build -t sentiment-service .
 ```
+
 
